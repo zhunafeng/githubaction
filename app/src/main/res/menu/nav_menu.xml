@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/my_garden_fragment"
+            android:title="My Garden" />
+        <item
+            android:id="@+id/plant_list_fragment"
+            android:title="Plant List" />
+    </group>
+
+    <item android:title="sub item">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sub_1"
+                    android:title="sub 1"
+                    />
+                <item
+                    android:id="@+id/sub_2"
+                    android:title="sub 2" />
+                <item
+                    android:id="@+id/sub_3"
+                    android:title="sub 3" />
+
+            </group>
+        </menu>
+    </item>
+</menu>

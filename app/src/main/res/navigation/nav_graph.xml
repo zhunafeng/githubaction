@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/my_garden_fragment">
+    <fragment
+        android:id="@+id/my_garden_fragment"
+        android:name="com.example.indigenous.MyGardenFragment"
+        android:label="my garden"
+        tools:layout="@layout/fragment_my_garden"
+        >
+        <action
+            android:id="@+id/my_garden_2_plant_list"
+            app:destination="@id/plant_list_fragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/plant_list_fragment"
+        android:name="com.example.indigenous.PlantListFragment"
+        android:label="plant list"
+        tools:layout="@layout/fragment_plant_list"
+        >
+        <action
+            android:id="@+id/plant_list_to_plant_detail"
+            app:destination="@id/plant_detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/plant_detail_fragment"
+        android:name="com.example.indigenous.PlantDetailFragment"
+        android:label="plant detail"
+        tools:layout="@layout/fragment_plant_detial"
+        >
+        <argument
+            android:name="plantId"
+            app:argType="string"
+            />
+        <action
+            android:id="@+id/plant_detail_action"
+            app:destination="@id/my_garden_fragment"/>
+    </fragment>
+</navigation>
