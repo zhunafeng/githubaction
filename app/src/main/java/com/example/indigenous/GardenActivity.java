@@ -22,6 +22,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.indigenous.databinding.ActivityGardenBinding;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
+//main activity
 
 public class GardenActivity extends AppCompatActivity {
 
